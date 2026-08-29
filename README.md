@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Ecoweb-desing" width="380" />
+</p>
+
 # Ecoweb-desing
 
 Pack unificado de skills de diseño frontend para Claude Code y otros agentes de IA.
