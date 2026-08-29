@@ -1,0 +1,50 @@
+{
+  "name": "agent-design-skill",
+  "version": "2.1.1",
+  "description": "Design partner skill for frontend agents. Kills AI-slop: 10 tells with positive direction, five commands (detect, audit, deslop, shape, craft), grilling-first planning, measured with agent-skills-eval.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "design",
+    "skill",
+    "frontend",
+    "ui",
+    "ux",
+    "agent",
+    "ai",
+    "accessibility",
+    "design-system",
+    "animation",
+    "claude",
+    "opencode"
+  ],
+  "files": [
+    "SKILL.md",
+    "REFERENCE.md",
+    "GUIDE.md",
+    "CONTEXT.md",
+    "reference/",
+    "scripts/",
+    "plugins/",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TudeOrangBiasa/design-skill.git"
+  },
+  "homepage": "https://github.com/TudeOrangBiasa/design-skill#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test scripts/design-parser.test.mjs scripts/detector.test.mjs scripts/concept-seed.test.mjs scripts/design-system-check.test.mjs scripts/css-scan.test.mjs",
+    "lint:docs": "node scripts/lint-docs.mjs",
+    "detect": "node scripts/detector.mjs",
+    "eval": "set -a; [ -f ./.eval-key.go.env ] && . ./.eval-key.go.env; set +a; EVAL_API_KEY=${EVAL_API_KEY:?EVAL_API_KEY is not set: create .eval-key.go.env with the opencode account key (personal, gitignored)} npx -y agent-skills-eval --config agent-skills-eval.yaml ${OPENAI_COMPATIBLE_BASE_URL:+--base-url $OPENAI_COMPATIBLE_BASE_URL} ${OPENAI_COMPATIBLE_MODEL:+--target $OPENAI_COMPATIBLE_MODEL --judge $OPENAI_COMPATIBLE_MODEL}",
+    "validate-catalog": "node scripts/validate-catalog.mjs",
+    "validate-evals": "node scripts/validate-evals.mjs"
+  },
+  "bin": {
+    "design-skill": "scripts/design.mjs"
+  }
+}

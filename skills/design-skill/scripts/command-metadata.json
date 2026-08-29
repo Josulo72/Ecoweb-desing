@@ -1,0 +1,32 @@
+{
+  "detect": {
+    "type": "script",
+    "flags": [],
+    "description": "Run the mechanical tell detector (node scripts/detector.mjs <target>); report error findings verbatim. Script entry: detector.mjs.",
+    "reference": null
+  },
+  "audit": {
+    "type": "flow",
+    "flags": ["a11y", "responsive", "interaction", "checkup", "polish"],
+    "description": "Two-axis scored audit (Standards x Spec, parallel passes, no reranking) writing .design-skill/audit-report.md with a /24 health score.",
+    "reference": "audit.md"
+  },
+  "deslop": {
+    "type": "flow",
+    "flags": ["distill", "bolder", "quieter", "harden"],
+    "description": "Kill AI-slop tells with positive alternatives; full rewritten output plus a one-line note per fix; detector must exit 0 after.",
+    "reference": "deslop.md"
+  },
+  "shape": {
+    "type": "flow",
+    "flags": [],
+    "description": "Grill before building: design tree, frontier rounds, every question with a recommendation; settle register, mode, persona, direction; output a confirmed brief.",
+    "reference": "shape.md"
+  },
+  "craft": {
+    "type": "flow",
+    "flags": ["typeset", "colorize", "layout", "animate", "document"],
+    "description": "Brief-confirmed build; ability flags apply the matching doctrine; --document generates and validates DESIGN.md (google-labs-code/design.md format).",
+    "reference": "craft.md"
+  }
+}
