@@ -8,6 +8,8 @@ Pack completo de skills de diseño frontend para Claude Code y otros agentes de 
 Reúne en un solo repo lo mejor del ecosistema anti-slop — impeccable, taste-skill,
 las skills de Emil Kowalski y las guías de Vercel — listo para instalar con un comando.
 
+> **Este repo no contiene trabajo propio.** Es una recopilación de skills de terceros, empaquetadas juntas para poder instalarlas con un solo comando. Cada una conserva su licencia MIT y todo el crédito es de sus autores — ver [Licencias y atribución](#licencias-y-atribución) al final.
+
 ## Instalación
 
 Todo el pack:
